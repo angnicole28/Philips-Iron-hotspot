@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="iron model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="1" camera-orbit="359.2deg 70.44deg 0.2173m" field-of-view="30deg" auto-rotate>
+
+      <button class="Hotspot" slot="hotspot-1" data-position="0.00669917473001427m 0.18176972731207003m -0.049405600890952965m" data-normal="-0.6673965882480305m -0.44776173463268787m 0.5950556469722939m" data-visibility-attribute="visible"onMouseOver="addhotspot1()" onMouseOut="removehotspot1()">
+          <div class="HotspotAnnotation"id="hotspot1">Handle</div>
+      </button>
+
+<button class="Hotspot" slot="hotspot-3" data-position="0.006828529855612489m 0.15025476235957005m -0.053674700078435444m" data-normal="-0.9650572368142728m 0.24647078721245613m 0.08897573109153341m" data-visibility-attribute="visible"onMouseOver="addhotspot2()" onMouseOut="removehotspot2()">
+
+          <div class="HotspotAnnotation"id="hotspot2">Water Tank</div>
+      </button>
+
+<button class="Hotspot" slot="hotspot-4" data-position="0.002732413955989263m 0.13225996414520275m -0.046504626252956115m" data-normal="-0.8557218867574348m -0.000009583540653518298m 0.5174360370446301m" data-visibility-attribute="visible"onMouseOver="addhotspot3()" onMouseOut="removehotspot3()">
+
+          <div class="HotspotAnnotation"id="hotspot3">Steam Plate</div>
+      </button>
+
+<button class="Hotspot" slot="hotspot-5" data-position="0.06977960689263354m 0.12894126453012367m -0.011433644662581281m" data-normal="0.1253652609923105m -0.5508019821737677m 0.8251670908184465m" data-visibility-attribute="visible"onMouseOver="addhotspot4()" onMouseOut="removehotspot4()">
+
+          <div class="HotspotAnnotation"id="hotspot4">Soleplate</div>
+      </button>
+
+<button class="Hotspot" slot="hotspot-6" data-position="0.0773113398482184m 0.15326415981389324m -0.023558558068560664m" data-normal="0.8747185746853906m 0.12375176216931809m 0.4685647409487266m" data-visibility-attribute="visible"onMouseOver="addhotspot5()" onMouseOut="removehotspot5()">
+
+          <div class="HotspotAnnotation"id="hotspot5">Outer Shell</div>
+      </button>
+
+<button class="Hotspot" slot="hotspot-7" data-position="0.012035650736291321m 0.1882521253949087m -0.0574715300717742m" data-normal="0.008322828030587611m 0.9999642144060413m 0.0015167204364161244m" data-visibility-attribute="visible"onMouseOver="addhotspot6()" onMouseOut="removehotspot6()">
+
+          <div class="HotspotAnnotation"id="hotspot6">Button</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>
+
+<script>
+
+function addhotspot1(){
+document.getElementById
+("hotspot1").style.visibility="visible"}
+
+function removehotspot1(){
+document.getElementById
+("hotspot1").style.visibility="hidden";}
+
+function addhotspot2(){
+document.getElementById
+("hotspot2").style.visibility="visible" }
+
+function removehotspot2(){
+document.getElementById
+("hotspot2").style.visibility="hidden";}
+
+function addhotspot3(){
+document.getElementById
+("hotspot3").style.visibility="visible" }
+
+function removehotspot3(){
+document.getElementById
+("hotspot3").style.visibility="hidden";}
+
+function addhotspot4(){
+document.getElementById
+("hotspot4").style.visibility="visible" }
+
+function removehotspot4(){
+document.getElementById
+("hotspot4").style.visibility="hidden";}
+
+function addhotspot5(){
+document.getElementById
+("hotspot5").style.visibility="visible" }
+
+function removehotspot5(){
+document.getElementById
+("hotspot5").style.visibility="hidden";}
+
+function addhotspot6(){
+document.getElementById
+("hotspot6").style.visibility="visible" }
+
+function removehotspot6(){
+document.getElementById
+("hotspot6").style.visibility="hidden";}
+
+
+
+
+
+
+</script>
+ 
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
